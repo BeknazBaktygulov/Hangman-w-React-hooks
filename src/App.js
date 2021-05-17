@@ -7,6 +7,15 @@ import Popup from './components/Popup';
 import Word from './components/Word';
 import WrongLetters from './components/WrongLetters';
 
+const words = ['application', 'programming', 'interface', 'wizard'];
+
+let selectedWord = words[Math.floor(Math.random() * words.length)];
+
+let playable = true;
+
+const correctLetters = [];
+const wrongLetters = [];
+
 function App() {
   return (
     <div className="App">
